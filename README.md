@@ -16,7 +16,11 @@ pipeline = Pipeline([__LogShape('Initial shape:'),
                      __Log('Done.')
                      ])
 pipeline.apply(df)
-          
+```
+
+Results in:
+
+```         
 Initial shape: (5, 1)
 After filtering for b: (2, 2)
 Done.
