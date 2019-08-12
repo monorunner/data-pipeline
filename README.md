@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/monorunner/data-pipeline.svg?branch=master](https://travis-ci.org/monorunner/data-pipeline)
+
 # data-pipeline
 Minimum viable DataFrame pipeline.
 
@@ -27,5 +29,19 @@ Done.
    a  b
 0  5  7
 1  7  9
- 
 ```
+
+
+## Available Stages
+```
+TransformCol
+ExprAssign
+Filter
+ResetIndex
+DropCols
+RenameCols
+ReorderCols
+QuickEval
+__LogShape
+__Log
+ ```
