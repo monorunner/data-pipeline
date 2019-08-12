@@ -9,13 +9,10 @@ matrix:
 before_install:
   - pip install -U pip
   - pip install -U pytest
-  - pip install codecov
   # required for the pip only-binary flag
   - pip install --upgrade pip setuptools wheel
   # install pandas
   - pip install --only-binary=pandas pandas
 install:
   - pip install .
-script: pytest --cov=data-pipeline
-after_success:
-  - codecov
+script: pytest
