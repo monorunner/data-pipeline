@@ -57,7 +57,7 @@ class Filter(Stage):
         self.fn = fn
 
     def _op(self, df):
-        return df[df[self.field].map(self.fn)]
+        return df[self.fn(df[self.field])]
 
 # </transformation> -----------------------------------------------------------
 

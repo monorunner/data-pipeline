@@ -30,10 +30,14 @@ class Stage(ABC):
     def _check(self, df):
         """Checks to run before applying the transformation."""
         cols_to_check = []
-        if hasattr(self, 'field'):
+        try:
             cols_to_check.append(getattr(self, 'field'))
-        if hasattr(self, 'fields'):
+        except AttributeError:
+            pass
+        try:
             cols_to_check += getattr(self, 'fields')
+        except AttributeError:
+            pass
         _check_columns(df, cols_to_check)
 
     def apply(self, df):
