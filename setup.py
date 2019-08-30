@@ -13,7 +13,7 @@ setup(
     version='0.0.1',
     packages=['dpipe'],
     install_requires=['pandas >= 0.24.0', 'pytest'],
-    url='https://github.com/monorunner/data-pipeline',
+    url='https://github.com/xh2/data-pipeline',
     license='MIT',
     author='sm-art',
     author_email='mail@s-m.dev',
