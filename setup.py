@@ -16,6 +16,6 @@ setup(
     url='https://github.com/monorunner/data-pipeline',
     license='MIT',
     author='sm-art',
-    author_email='mail@sm-art.cc',
+    author_email='mail@s-m.dev',
     description='Minimum viable DataFrame pipeline.'
 )
