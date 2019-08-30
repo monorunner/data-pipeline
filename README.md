@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/monorunner/data-pipeline.svg?branch=master)](https://travis-ci.org/monorunner/data-pipeline)
+[![Build Status](https://travis-ci.org/xh2/data-pipeline.svg?branch=master)](https://travis-ci.org/monorunner/data-pipeline)
 
 # data-pipeline
 Minimum viable DataFrame pipeline.
