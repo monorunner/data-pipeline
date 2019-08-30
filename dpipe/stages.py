@@ -17,6 +17,7 @@ Index:
     __Log
 
 """
+import logging
 
 from dpipe.core import Stage
 
@@ -30,7 +31,12 @@ class TransformCol(Stage):
 
     def _op(self, df):
         df = df.copy()
-        df[self.field] = df[self.field].map(self.fn)
+        try:
+            df[self.field] = self.fn(df[self.field])
+        except ValueError:
+            logging.warning('Vectorisation failed. If you are using a lambda'
+                            'function, try use a named function instead.')
+            df[self.field] = df[self.field].map(self.fn)
         return df
 
 
